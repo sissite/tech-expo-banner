@@ -35,18 +35,26 @@
       border: 0;
     }
 
-    .caption {
-      position: absolute;
-      left: 20px;
-      bottom: 20px;
-      background: rgba(82, 82, 82, 0.82);
-      color: white;
-      padding: 10px 14px;
-      border-radius: 8px;
-      font-size: 15px;
-      line-height: 1.2;
-      z-index: 2;
-    }
+ .caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a73e8; /* Google-style blue */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.caption:hover {
+  background: #155ab6;
+}
   </style>
 </head>
 <body>
